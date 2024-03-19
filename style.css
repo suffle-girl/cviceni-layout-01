@@ -34,3 +34,34 @@ body {
 	- 640px
 	- 1000px
 */
+
+.kontejner {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 640px) {
+  .kontejner {
+    flex-direction: row;
+  }
+
+  .horni {
+    flex-basis: 100%;
+  }
+
+  .prvni,
+  .druhy {
+    flex-basis: 50%;
+  }
+
+}
+
+@media (min-width: 1000px) {
+  .prvni,
+  .druhy,
+  .treti {
+    flex-basis: 33.333333%;
+  }
+
+}
